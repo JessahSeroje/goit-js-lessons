@@ -1,0 +1,61 @@
+const handleGalleryClick = (event) => { event.preventDefault(); if
+(event.target.nodeName !== "IMG") { return; } const urlOriginal =
+event.target.dataset.source; // create new basicLightBox instance const instance
+= basicLightbox.create(`<img src="${urlOriginal}" />`); instance.show(); //
+handleOnEscKeyPress const handleOnEscKeyPress = (event) => { if (event.key ===
+"Escape") { instance.close(); window.removeEventListener("keydown",
+handleOnEscKeyPress); } }; window.addEventListener("keydown",
+handleOnEscKeyPress); }; galleryList.addEventListener("click",
+handleGalleryClick);
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Image gallery</title>
+    <!-- basic light box css -->
+    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <p><a href="index.html">Go back</a></p>
+
+    <!-- Add gallery items to this list -->
+    <ul class="gallery"></ul>
+
+    <!-- BasicLightBox Script -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
+    />
+    <script src="js/01-gallery.js" type="module"></script>
+  </body>
+</html>
+import { galleryItems } from "./gallery-items.js"; // Change code below this
+line const galleryList = document.querySelector(".gallery"); const createGallery
+= (el) => { return el .map(({ preview, original, description }) => { return `
+<li class="gallery__item">
+  <a class="gallery__link" href="${original}">
+    <img
+      class="gallery__image"
+      src="${preview}"
+      data-source="${original}"
+      alt="${description}"
+    />
+  </a>
+</li>
+
+`; }) .join(""); }; const photosMarkup = createGallery(galleryItems);
+galleryList.insertAdjacentHTML("beforeend", photosMarkup); //
+-------------------------------------------------------------- const
+handleGalleryClick = (event) => { event.preventDefault(); if
+(event.target.nodeName !== "IMG") { return; } const urlOriginal =
+event.target.dataset.source; // create new basicLightBox instance const instance
+= basicLightbox.create(`<img src="${urlOriginal}" />`); instance.show(); //
+handleOnEscKeyPress const handleOnEscKeyPress = (event) => { if (event.key ===
+"Escape") { instance.close(); window.removeEventListener("keydown",
+handleOnEscKeyPress); } }; window.addEventListener("keydown",
+handleOnEscKeyPress); }; galleryList.addEventListener("click",
+handleGalleryClick);
