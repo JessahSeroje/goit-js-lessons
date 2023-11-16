@@ -13,7 +13,7 @@ const daysUntilDeadline = 5;
 // Write code below this line
  */
 
-const daysUntilDeadline = 4;
+const daysUntilDeadline = 1;
 // Write code below this line
 if (daysUntilDeadline === 0) {
   console.log("Today");

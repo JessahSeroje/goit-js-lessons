@@ -25,6 +25,15 @@ const b = 180;
   console.log(b + 512);
 } */
 
+// if (a > 100 && b > 100) {
+//   //print to the console the maximum value between a and b here
+//   console.log(Math.max(a, b));
+// } else {
+//   console.log(b + 512);
+// }
+
+//  or this method //
+
 if (a > 100 && b > 100) {
   //print to the console the maximum value between a and b here
   if (a > b) {

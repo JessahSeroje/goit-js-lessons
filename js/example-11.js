@@ -9,16 +9,16 @@ const rightAnswer = 'ECMAScript';
 // Write if else code below this line
 */
 
-// const answer = prompt("What is the official name of JavaScript?");
-// const rightAnswer = "ECMAScript";
-// // Write if else code below this line
+const answer = prompt("What is the official name of JavaScript?");
+const rightAnswer = "ECMAScript";
+// Write if else code below this line
 
-// if (answer.toLowerCase() === rightAnswer.toLowerCase()) {
-//   console.log("Correct!");
-// } else {
-//   //   console.log("Do not know? ECMAScript!");
-//   alert("Do not know? ECMAScript!");
-// }
+if (answer.toLowerCase() === rightAnswer.toLowerCase()) {
+  console.log("Correct!");
+} else {
+  //   console.log("Do not know? ECMAScript!");
+  alert("Do not know? ECMAScript!");
+}
 
 // const answer = prompt("Panget ba si KC?");
 // const rightAnswer = "Yes";
@@ -35,6 +35,6 @@ const rightAnswer = 'ECMAScript';
 // const hotelName = prompt("Please enter desired hotel name");
 // console.log(hotelName);
 
-const value = prompt("Please enter a number!");
-console.log(typeof value); // "string"
-console.log(value); // "5"
+// const value = prompt("Please enter a number!");
+// console.log(typeof value); // "string"
+// console.log(value); // "5"

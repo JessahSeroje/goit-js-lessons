@@ -13,7 +13,7 @@ console.log(timestring);
 */
 
 const hours = 14;
-const minutes = 0;
+const minutes = 26;
 let timestring;
 // Write if else code below this line
 
