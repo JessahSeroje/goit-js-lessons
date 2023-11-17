@@ -29,3 +29,18 @@ if (login === "Admin") {
 } else {
   console.log("I don't know you");
 }
+
+// const login = prompt("Enter login");
+// // Write if, else if, else code here
+// if (login === "Admin") {
+//   const password = prompt("Enter a password");
+//   if (password === "I'm an admin") {
+//     alert("Hello!");
+//   } else {
+//     alert("Wrong password!");
+//   }
+// } else if (login === null) {
+//   alert("Cancelled");
+// } else {
+//   alert("I don't know you");
+// }
