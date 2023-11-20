@@ -4,7 +4,7 @@ Example 7 - Average value (Function Declaration and Rest Operator)
 Write a calAverage() function using Function Declaration that takes an arbitrary number of arguments and returns their average. All arguments will be only numbers.
 
 */
-// sum/length
+// sum/length - computation for average
 
 function calAverage(...args) {
   // write code below this line

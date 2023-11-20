@@ -12,6 +12,9 @@ function getRectArea(dimensions) {
   const data = dimensions.split(" "); // ['8', '11']
 
   return data[0] * data[1];
+
+  // other way ⤵️
+  //   return data[0] * data[data.length - 1];
 }
 
 console.log(getRectArea("8 11"));

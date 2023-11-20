@@ -15,3 +15,4 @@ const logItems = function (items) {
 
 logItems(["Mango", "Poly", "Ajax"]);
 logItems(["🍎", "🍇", "🍑", "🍌", "🍋"]);
+logItems(["MJ👶🏻", "KC👧🏻", "Mommy👩🏻", "Daddy👨🏻"]);
