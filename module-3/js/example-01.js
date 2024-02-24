@@ -21,7 +21,7 @@ const user = {
 // write code below this line
 
 // 1.
-// user.mood = "happy";
+user.mood = "happy";
 console.log(user);
 
 // 2.
@@ -29,23 +29,23 @@ console.log(user);
 // console.log(user);
 
 // 3.
-// user["premium"] = false;
-// console.log(user);
+user["premium"] = false;
+console.log(user);
 
-// user[1] = "i am replaced";
-// console.log(user);
+user[1] = "i am replaced";
+console.log(user);
 
-// console.log(user.hobby);
+console.log(user.hobby);
 
 // 4.
-// const keysArr = Object.keys(user);
-// console.log(keysArr);
+const keysArr = Object.keys(user);
+console.log(keysArr);
 
-// for (const key of keysArr) {
-//   console.log(`${key} - ${user[key]}`);
-// }
+for (const key of keysArr) {
+  console.log(`${key} - ${user[key]}`);
+}
 
 // 5.
-// for (const key in user) {
-//   console.log(`${key} - ${user[key]}`);
-// }
+for (const key in user) {
+  console.log(`${key} - ${user[key]}`);
+}

@@ -25,17 +25,17 @@ console.log(courses);
 
 //////////////////////////////////////////////////////////////////////////
 
-// // 2. removeCourse(name) {}
-// function removeCourse(name) {
-//   // write code below this line
-//   const courseIndex = courses.indexOf(name);
+// 2. removeCourse(name) {}
+function removeCourse(name) {
+  // write code below this line
+  const courseIndex = courses.indexOf(name);
 
-//   courses.splice(courseIndex, 1);
-// }
+  courses.splice(courseIndex, 1);
+}
 
-// // call removeCourse
-// removeCourse("JavaScript");
-// console.log(courses);
+// call removeCourse
+removeCourse("JavaScript");
+console.log(courses);
 
 //////////////////////////////////////////////////////////////////////////
 
