@@ -15,8 +15,8 @@ function printContactsInfo({ names, phones }) {
 
 // It was
 // printContactsInfo(
-//   'Jacob,William,Solomon,Artemis',
-//   '89001234567,89001112233,890055566377,890055566300'
+//   "Jacob,William,Solomon,Artemis",
+//   "89001234567,89001112233,890055566377,890055566300"
 // );
 
 // Is expected
