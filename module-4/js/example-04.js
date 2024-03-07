@@ -17,7 +17,7 @@ const createProduct = (partialProduct, callback) => {
 //   console.log(product);
 // }
 
-const logProduct = (product) => {
+const logProduct = product => {
   console.log(product);
 };
 
@@ -25,7 +25,7 @@ const logProduct = (product) => {
 //   console.log(product.price * product.quantity);
 // }
 
-const logTotalPrice = (product) => {
+const logTotalPrice = product => {
   console.log(product.price * product.quantity);
 };
 
